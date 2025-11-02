@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plates of Hope - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@800&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Plates of Hope Logo" class="logo">
+                <span class="logo-text">Plates of Hope</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="donate.html" class="nav-link">DONATE FOOD</a>
+                <a href="request.html" class="nav-link">REQUEST FOOD</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="login.html" class="nav-link" id="loginNavLink">LOGIN</a>
+                
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown" id="profileDropdown" style="display: none;">
+                    <button class="profile-btn" id="profileBtn">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="profile-name" id="profileName">User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-menu" id="profileMenu">
+                        <div class="profile-info">
+                            <div class="profile-email" id="profileEmail">user@example.com</div>
+                            <div class="profile-provider" id="profileProvider"></div>
+                        </div>
+                        <div class="profile-divider"></div>
+                        <a href="my-donations.html" class="profile-menu-item" id="myDonationsBtn">
+                            <i class="fas fa-heart"></i>
+                            <span>My Donations</span>
+                        </a>
+                        <a href="#" class="profile-menu-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Feeding Hope by<br>Saving Food</h1>
+                <p class="hero-description">
+                    Join our mission to reduce food waste and feed families in need. 
+                    Every donation makes a difference in someone's life.
+                </p>
+                <div class="hero-buttons">
+                    <a href="donate.html" class="btn btn-primary">
+                        <i class="fas fa-heart"></i> Donate Food Now
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Secure</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Pickup</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Food donation volunteers">
+                <div class="hero-stats">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Meals Donated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact Together</h2>
+                <p class="section-subtitle">See how your donations are making a real difference</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card green">
+                    <div class="impact-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="impact-number">1000+</div>
+                    <div class="impact-label">Meals Provided</div>
+                </div>
+                <div class="impact-card blue">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-number">500</div>
+                    <div class="impact-label">Families Helped</div>
+                </div>
+                <div class="impact-card orange">
+                    <div class="impact-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="impact-number">200kg</div>
+                    <div class="impact-label">Food Waste Reduced</div>
+                </div>
+                <div class="impact-card purple">
+                    <div class="impact-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="impact-number">100+</div>
+                    <div class="impact-label">Active Donors</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple steps to make a big difference</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Register & List Food</h3>
+                    <p class="step-description">
+                        Sign up and list your surplus food items with details about quantity, type, and pickup location.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">We Arrange Pickup</h3>
+                    <p class="step-description">
+                        Our volunteers coordinate with you to schedule a convenient pickup time for your food donation.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Food Reaches Families</h3>
+                    <p class="step-description">
+                        We distribute your donation to families in need through our network of partner organizations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Stories from our community</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <div class="avatar-circle"></div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Sarah Johnson</h4>
+                            <p class="testimonial-role">Restaurant Owner</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Plates of Hope made it so easy for us to donate our surplus food. Knowing it's helping families instead of going to waste feels amazing."
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-mike.png" alt="Rahul Sharma" class="avatar-img">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Rahul Sharma</h4>
+                            <p class="testimonial-role">Volunteer</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Being part of this mission gives me purpose. Every pickup reminds me how small actions can create big changes in our community."
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/testimonial-maria.png" alt="palak rajut" class="avatar-img">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">palak rajut</h4>
+                            <p class="testimonial-role">Beneficiary</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "This organization has been a blessing for my family. The fresh food we receive helps us eat healthy meals we couldn't afford otherwise."
+                    </p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Make a Difference?</h2>
+            <p class="cta-text">
+                Join thousands of donors who are fighting hunger in our community. Your surplus food can feed families tonight.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Plates of Hope</h3>
+                    <p class="footer-description">
+                        Fighting hunger and reducing food waste in our community. Together, we can ensure no one goes hungry while perfectly good food goes to waste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8700981642</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@platesofhope.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-8 Sec -122 Noida(201301)<br>Uttar pradesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates of Hope. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Success Modal -->
+    <div class="login-success-modal" id="loginSuccessModal">
+        <div class="login-modal-content">
+            <div class="login-modal-icon">
+                <div class="login-success-circle">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <h2 class="login-modal-title">Welcome Back!</h2>
+            <p class="login-modal-message" id="loginModalMessage">You have successfully logged in.</p>
+            <div class="login-modal-info" id="loginModalInfo">
+                <div class="login-user-name" id="loginUserName">User</div>
+                <div class="login-user-email" id="loginUserEmail">user@example.com</div>
+            </div>
+            <button class="btn btn-primary" id="closeLoginModal">Continue</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
