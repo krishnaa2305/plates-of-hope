@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Food - Plates of Hope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@800&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Plates of Hope Logo" class="logo">
+                <span class="logo-text">Plates of Hope</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="donate.html" class="nav-link">DONATE FOOD</a>
+                <a href="request.html" class="nav-link active">REQUEST FOOD</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="login.html" class="nav-link" id="loginNavLink">LOGIN</a>
+                
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown" id="profileDropdown" style="display: none;">
+                    <button class="profile-btn" id="profileBtn">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="profile-name" id="profileName">User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-menu" id="profileMenu">
+                        <div class="profile-info">
+                            <div class="profile-email" id="profileEmail">user@example.com</div>
+                            <div class="profile-provider" id="profileProvider"></div>
+                        </div>
+                        <div class="profile-divider"></div>
+                        <a href="my-donations.html" class="profile-menu-item" id="myDonationsBtn">
+                            <i class="fas fa-heart"></i>
+                            <span>My Donations</span>
+                        </a>
+                        <a href="#" class="profile-menu-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="request-main">
+        <section class="request-form-section">
+            <div class="container">
+                <h2 class="form-title">Request Food</h2>
+                <p class="form-subtitle">Request your quantity of food you require to feed needy families and people</p>
+                
+                <form class="request-form" id="requestForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="req-address">Address</label>
+                            <input type="text" id="req-address" placeholder="Enter Address" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="req-quantity">Quantity</label>
+                            <input type="text" id="req-quantity" placeholder="Enter Quantity" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ngo-name">Ngo Name</label>
+                            <input type="text" id="ngo-name" placeholder="Enter Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="req-phone">Phone No</label>
+                            <input type="tel" id="req-phone" placeholder="Enter Phone No" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-request">
+                        <i class="fas fa-heart"></i>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 15L2.5 9.5L3.5 8.5L8 13L12.5 8.5L13.5 9.5L8 15Z" fill="#16A34A"/>
+                        </svg>
+                        Request Now
+                    </button>
+                    
+                    <div class="security-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Encrypted</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Plates of Hope</h3>
+                    <p class="footer-description">
+                        Fighting hunger and reducing food waste in our community. Together, we can ensure no one goes hungry while perfectly good food goes to waste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8700981642</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@platesofhope.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-8 Sec -122 Noida(201301)<br>Uttar pradesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates of Hope. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
