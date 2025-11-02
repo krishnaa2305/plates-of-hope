@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Plates of Hope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@800&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Plates of Hope Logo" class="logo">
+                <span class="logo-text">Plates of Hope</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="donate.html" class="nav-link">DONATE FOOD</a>
+                <a href="request.html" class="nav-link">REQUEST FOOD</a>
+                <a href="about.html" class="nav-link active">ABOUT</a>
+                <a href="login.html" class="nav-link" id="loginNavLink">LOGIN</a>
+                
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown" id="profileDropdown" style="display: none;">
+                    <button class="profile-btn" id="profileBtn">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="profile-name" id="profileName">User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-menu" id="profileMenu">
+                        <div class="profile-info">
+                            <div class="profile-email" id="profileEmail">user@example.com</div>
+                            <div class="profile-provider" id="profileProvider"></div>
+                        </div>
+                        <div class="profile-divider"></div>
+                        <a href="my-donations.html" class="profile-menu-item" id="myDonationsBtn">
+                            <i class="fas fa-heart"></i>
+                            <span>My Donations</span>
+                        </a>
+                        <a href="#" class="profile-menu-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="about-main">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="about-hero-title">About Plates Of Hope</h1>
+                <p class="about-hero-subtitle">
+                    Bridging the gap between food waste and hunger by connecting generous donors with those in need
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-image">
+                        <img src="images/mission-image.png" alt="Our Mission">
+                    </div>
+                    <div class="mission-text">
+                        <h2 class="section-title-large">Our Mission</h2>
+                        <p>
+                            At Plates Of Hope, we believe that no one should go hungry while perfectly good food goes to waste. Our mission is to create a seamless platform where restaurants, food businesses, and generous individuals can donate their excessive leftover food to us and then we provide that food to our registered ngo.
+                        </p>
+                        <p class="mission-quote">
+                            We're building a world where surplus food finds its way to empty plates, creating a sustainable cycle of giving that benefits everyone involved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section class="what-we-do-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What We Do</h2>
+                    <p class="section-subtitle">We've created a comprehensive ecosystem that makes food donation simple, safe, and impactful</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon green-bg">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Restaurant Partnerships</h3>
+                        <p>We partner with restaurants, cafes, and food businesses to rescue surplus food that would otherwise go to waste. Our platform makes it easy for establishments to donate excess inventory at the end of each day.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon teal-bg">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Individual Contributions</h3>
+                        <p>Community members can easily donate homemade meals, groceries, through our platform. We provide guidelines to ensure all donations meet our safety guidelines.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon yellow-bg">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Smart Distribution</h3>
+                        <p>Our network of volunteers and partner organizations ensures donated food reaches those who need it most. We use technology to optimize routes and minimize food spoilage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-image">
+                        <img src="images/story-image.png" alt="Our Story">
+                    </div>
+                    <div class="story-text">
+                        <h2 class="section-title-large">Our Story</h2>
+                        <p>
+                            Plates Of Hope was born from a simple observation: while millions of people face food insecurity, tons of perfectly good food is wasted daily. Founded in 2025 by a team of 3 students.
+                        </p>
+                        <p>
+                            What started as a small local initiative now we are in 3 cities in Delhi Ncr and planning for expending to more cities soon. We've facilitated over 1000 meals and prevented two hundred kilogram of food from ending up in landfills.
+                        </p>
+                        <div class="story-stats">
+                            <div class="story-stat">
+                                <div class="story-stat-number">1000+</div>
+                                <div class="story-stat-label">Meals Shared</div>
+                            </div>
+                            <div class="story-stat">
+                                <div class="story-stat-number">20</div>
+                                <div class="story-stat-label">Partner Restaurants</div>
+                            </div>
+                            <div class="story-stat">
+                                <div class="story-stat-number">3</div>
+                                <div class="story-stat-label">Cities Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Values</h2>
+                    <p class="section-subtitle">The principles that guide everything we do</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon green-bg">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>Reducing food waste while nourishing communities for a better planet.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon teal-bg">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Building stronger neighborhoods through shared responsibility and care.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon yellow-bg">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Transparency</h3>
+                        <p>Open communication about our impact and operations at every level.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon blue-bg">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Using technology to create efficient solutions for social good.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="about-cta">
+            <div class="container">
+                <h2 class="cta-title-white">Join Our Mission</h2>
+                <p class="cta-text-white">
+                    Whether you're a restaurant owner, community member, or organization, there's a place for you in our food-sharing community.
+                </p>
+                <div class="cta-buttons">
+                    <a href="donate.html" class="btn btn-white">Start Donating Food</a>
+                    <a href="#" class="btn btn-outline-white">Become a Partner</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Plates of Hope</h3>
+                    <p class="footer-description">
+                        Fighting hunger and reducing food waste in our community. Together, we can ensure no one goes hungry while perfectly good food goes to waste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8700981642</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@platesofhope.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-8 Sec -122 Noida(201301)<br>Uttar pradesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates of Hope. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
