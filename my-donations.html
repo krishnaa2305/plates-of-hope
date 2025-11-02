@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Donations - Plates of Hope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@800&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Plates of Hope Logo" class="logo">
+                <span class="logo-text">Plates of Hope</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="donate.html" class="nav-link">DONATE FOOD</a>
+                <a href="request.html" class="nav-link">REQUEST FOOD</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="login.html" class="nav-link" id="loginNavLink">LOGIN</a>
+                
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown" id="profileDropdown" style="display: none;">
+                    <button class="profile-btn" id="profileBtn">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="profile-name" id="profileName">User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-menu" id="profileMenu">
+                        <div class="profile-info">
+                            <div class="profile-email" id="profileEmail">user@example.com</div>
+                            <div class="profile-provider" id="profileProvider"></div>
+                        </div>
+                        <div class="profile-divider"></div>
+                        <a href="my-donations.html" class="profile-menu-item" id="myDonationsBtn">
+                            <i class="fas fa-heart"></i>
+                            <span>My Donations</span>
+                        </a>
+                        <a href="#" class="profile-menu-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="my-donations-main">
+        <div class="container">
+            <div class="donations-header">
+                <h1 class="donations-title">My Donations</h1>
+                <p class="donations-subtitle">View all your food donation history and track their status</p>
+            </div>
+
+            <div class="donations-content">
+                <div id="donationsList" class="donations-list">
+                    <!-- Donations will be populated here -->
+                </div>
+
+                <div id="emptyState" class="empty-state" style="display: none;">
+                    <div class="empty-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 class="empty-title">No Donations Yet</h2>
+                    <p class="empty-text">You haven't made any donations yet. Start making a difference today!</p>
+                    <a href="donate.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Make Your First Donation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Plates of Hope</h3>
+                    <p class="footer-description">
+                        Fighting hunger and reducing food waste in our community. Together, we can ensure no one goes hungry while perfectly good food goes to waste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8700981642</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@platesofhope.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-8 Sec -122 Noida(201301)<br>Uttar pradesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates of Hope. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
