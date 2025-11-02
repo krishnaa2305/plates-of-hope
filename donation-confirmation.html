@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Confirmed - Plates of Hope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@800&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Plates of Hope Logo" class="logo">
+                <span class="logo-text">Plates of Hope</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="donate.html" class="nav-link">DONATE FOOD</a>
+                <a href="request.html" class="nav-link">REQUEST FOOD</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="login.html" class="nav-link" id="loginNavLink">LOGIN</a>
+                
+                <!-- Profile Dropdown -->
+                <div class="profile-dropdown" id="profileDropdown" style="display: none;">
+                    <button class="profile-btn" id="profileBtn">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span class="profile-name" id="profileName">User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-menu" id="profileMenu">
+                        <div class="profile-info">
+                            <div class="profile-email" id="profileEmail">user@example.com</div>
+                            <div class="profile-provider" id="profileProvider"></div>
+                        </div>
+                        <div class="profile-divider"></div>
+                        <a href="my-donations.html" class="profile-menu-item" id="myDonationsBtn">
+                            <i class="fas fa-heart"></i>
+                            <span>My Donations</span>
+                        </a>
+                        <a href="#" class="profile-menu-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="confirmation-main">
+        <div class="confirmation-container">
+            <div class="confirmation-content">
+                <!-- Success Icon -->
+                <div class="confirmation-icon">
+                    <div class="success-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                <h1 class="confirmation-title">Donation Confirmed!</h1>
+                <p class="confirmation-subtitle">Thank you for your generous food donation</p>
+
+                <!-- Confirmation Details Card -->
+                <div class="confirmation-card">
+                    <div class="confirmation-header">
+                        <h2 class="details-title">Donation Details</h2>
+                        <div class="confirmation-number">
+                            <span class="number-label">Confirmation #</span>
+                            <span class="number-value" id="confirmationNumber">DON-2025-001</span>
+                        </div>
+                    </div>
+
+                    <div class="details-section">
+                        <div class="detail-item">
+                            <div class="detail-label">
+                                <i class="fas fa-user"></i>
+                                <span>Donor Name</span>
+                            </div>
+                            <div class="detail-value" id="donorName">-</div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-label">
+                                <i class="fas fa-phone"></i>
+                                <span>Phone Number</span>
+                            </div>
+                            <div class="detail-value" id="donorPhone">-</div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-label">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pickup Address</span>
+                            </div>
+                            <div class="detail-value" id="donorAddress">-</div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-label">
+                                <i class="fas fa-utensils"></i>
+                                <span>Donation Quantity</span>
+                            </div>
+                            <div class="detail-value" id="donationQuantity">-</div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-label">
+                                <i class="fas fa-calendar"></i>
+                                <span>Submission Date</span>
+                            </div>
+                            <div class="detail-value" id="submissionDate">-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="next-steps">
+                    <h3 class="steps-title">What Happens Next?</h3>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>We'll Contact You</h4>
+                                <p>Our team will call you within 24 hours to schedule a convenient pickup time.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Pickup Arrangement</h4>
+                                <p>We'll coordinate with you to arrange a free pickup from your location.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Food Reaches Families</h4>
+                                <p>Your donation will be distributed to families in need through our partner organizations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        Back to Home
+                    </a>
+                    <a href="donate.html" class="btn btn-secondary">
+                        <i class="fas fa-plus"></i>
+                        Make Another Donation
+                    </a>
+                </div>
+
+                <!-- Support Info -->
+                <div class="support-info">
+                    <p class="support-text">
+                        <i class="fas fa-info-circle"></i>
+                        Need help? Contact us at <a href="tel:+918700981642">8700981642</a> or 
+                        <a href="mailto:info@platesofhope.org">info@platesofhope.org</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Plates of Hope</h3>
+                    <p class="footer-description">
+                        Fighting hunger and reducing food waste in our community. Together, we can ensure no one goes hungry while perfectly good food goes to waste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8700981642</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@platesofhope.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>H-8 Sec -122 Noida(201301)<br>Uttar pradesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plates of Hope. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
